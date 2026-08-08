@@ -2,3 +2,9 @@
 .DS_Store
 .vscode/
 __pycache__/
+hello.py
+stock_agent.py
+stock_test.py
+tool_practice.py
+sales-analysis/
+ptyhon-for-ai.code-workspace
