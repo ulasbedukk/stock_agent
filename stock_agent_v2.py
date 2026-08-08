@@ -1,4 +1,4 @@
-#DO NOT FORGET TO ADD IMPORT AND SETUP FOR THE CLIENT!!!!
+#Stock Agent
 
 import yfinance as yf
 import os
