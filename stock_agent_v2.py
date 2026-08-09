@@ -102,7 +102,7 @@ def format_price(value, currency_symbol="$"):
 # ---------- Language ----------
 print("\n" + "=" * 50)
 language_choice = input("Which language would you like to continue in? / Hangi dille devam etmek istersiniz? (English/Türkçe): ").strip()
-is_turkish = language_choice.lower() in ["türkçe", "turkce", "turkish", "t"]
+is_turkish = language_choice.lower() in ["türkçe", "turkce", "turkish", "t", "tur", "tr", "trk", "turk", "türk", "turkey,"]
 
 if is_turkish:
     language_name = "Turkish"
@@ -258,7 +258,7 @@ while keep_going:
                         combined_result = f"{symbol_input}: {currency_symbol}{price}"
 
                         response = client.messages.create(
-                            model="claude-sonnet-4-5", # KULLANICININ İLK KODUNDAKİ MODEL
+                            model="claude-sonnet-4-5", # First model that you used my man
                             max_tokens=300,
                             tools=[stock_tool],
                             messages=[
